@@ -1,0 +1,50 @@
+<view class="body">
+  <view class="content" wx:for="{{Express}}" wx:key="index">
+    <view class="content-top">
+      <image src="{{item.ExpressAvatarUrl}}"></image>
+      <view class="content-top-text">
+        <text class="name">{{item.ExpressNickName}}</text>
+        <text class="time">{{item.ExpressTime}}</text>
+      </view>
+      <view class="content-top-status" >
+        {{item.status}}
+      </view>
+    </view>
+    <view class="content-middle">
+      <view class="content-middle-top">
+        <text class="top-left">取快递>>>{{item.ExpressLeiXing}}</text>
+        <text class="top-right">￥{{item.ExpressMoney}}</text>
+      </view>
+      <view class="content-middle-body">
+        <view class="content-middle-body-lt">
+          <image src="../../image/location.png"></image>
+          <text>送达地点</text>
+          <text class="gray">{{item.ExpressReceiveAddress}}</text>
+        </view>
+        <view class="content-middle-body-lt">
+          <image src="../../image/time.png"></image>
+          <text>送达时间</text>
+          <text class="gray">{{item.ExpressReceiveTime}}</text>
+        </view>
+        <view class="content-middle-body-lt">
+          <image src="../../image/addressFrom.png"></image>
+          <text>取件地点</text>
+          <text class="gray">{{item.ExpressFromAddress}}</text>
+        </view>
+        <view class="content-middle-body-lt">
+          <image src="../../image/Code.png"></image>
+          <text>取件码</text>
+          <text class="gray">{{item.ExpressCode}}</text>
+        </view>
+        <view class="content-middle-body-lt">
+          <image src="../../image/qq.png"></image>
+          <text>{{item.ExpressQQ}}</text>
+        </view>
+        <view class="content-middle-body-lt">
+            <image src="../../image/phone.png"></image>
+            <text>{{item.ExpressPhone}}</text>
+          </view>
+      </view>
+    </view>
+  </view>
+</view>

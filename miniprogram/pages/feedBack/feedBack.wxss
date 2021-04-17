@@ -1,0 +1,19 @@
+.body {
+  width: 80%;
+  margin: 0 auto;
+  padding: 80rpx 40rpx;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  margin-top: 30rpx;
+  text-align: center;
+}
+.QQWX {
+  display: flex;
+  flex-direction: column;
+  border: 1rpx solid black;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30rpx;
+  padding: 30rpx 0;
+}

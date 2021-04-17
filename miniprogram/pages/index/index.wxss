@@ -1,0 +1,19 @@
+.body {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+  margin-top: 80rpx;
+}
+.body view {
+  width: 250rpx;
+  height: 250rpx;
+  text-align: center;
+  line-height: 250rpx;
+  background-color: #fff;
+  box-shadow: 0 0 3rpx 3rpx;
+  font-size: 35rpx;
+}
+.body :nth-child(1) {
+   margin-right: 40rpx;
+}

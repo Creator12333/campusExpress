@@ -1,0 +1,8 @@
+<view class="body">
+  <view bindtap="gotoForm">
+    帮我代取
+  </view>
+  <view bindtap="gotoOrder">
+    我要代取
+  </view>
+</view>

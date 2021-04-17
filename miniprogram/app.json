@@ -1,0 +1,42 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/order/order",
+    "pages/me/me",
+    "pages/formInfo/formInfo",
+    "pages/myOrder/myOrder",
+    "pages/myPublish/myPublish",
+    "pages/feedBack/feedBack"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "云开发 QuickStart",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "iconPath": "./image/index.png",
+        "selectedIconPath": "./image/index_fill.png",
+        "pagePath": "pages/index/index",
+        "text": "主页"
+      },
+      {
+        "iconPath": "./image/order.png",
+        "selectedIconPath": "./image/order_fill.png",
+        "pagePath": "pages/order/order",
+        "text": "订单"
+      },
+      {
+        "iconPath": "./image/me.png",
+        "selectedIconPath": "./image/me_fill.png",
+        "pagePath": "pages/me/me",
+        "text": "个人中心"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2"
+}

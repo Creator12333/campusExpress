@@ -1,0 +1,45 @@
+	<view class="cu-form-group">
+		<view class="title">快递类型</view>
+		<picker bindchange="PickerChangeExpress" value="{{index}}" range="{{picker}}">
+			<view class="picker">
+				{{picker[index]}}
+			</view>
+		</picker>
+  </view>
+
+  <view class="cu-form-group">
+		<view class="title">送达地点</view>
+		<input placeholder="如：15号楼B105(男)" value="{{ExpressAddress}}" bindinput="ExpressReceiveAddress"></input>
+  </view>
+
+  <view class="cu-form-group">
+		<view class="title">送达时间</view>
+		<input placeholder="如：2020/10/22 下午6点前" value="{{ExpressTime}}" bindinput="ExpressTime"></input>
+  </view>
+
+  <view class="cu-form-group">
+		<view class="title">取件地点</view>
+		<input placeholder="如：15号楼菜鸟驿站" value="{{ExpressFromAddress}}" bindinput="ExpressFromAddress"></input>
+  </view>
+
+  <view class="cu-form-group">
+		<view class="title">取件码</view>
+		<input placeholder="如：999-999-999" value="{{ExpressCode}}" bindinput="ExpressCode"></input>
+  </view>
+  
+  <view class="cu-form-group">
+		<view class="title">悬赏金额(元)</view>
+		<input placeholder="如：2" value="{{ExpressMoney}}" bindinput="ExpressMoney"></input>
+  </view>
+  
+  <view class="cu-form-group">
+		<view class="title">QQ</view>
+		<input placeholder="如：505417246" value="{{ExpressQQ}}" bindinput="ExpressQQ"></input>
+  </view>
+
+  <view class="cu-form-group">
+		<view class="title">手机号</view>
+		<input placeholder="如：18331092918" value="{{ExpressPhone}}" bindinput="ExpressPhone"></input>
+  </view>
+
+  <button type="primary" style="width:80%;margin-top:30rpx" bindtap="ExpressSubmit">立即发布</button>

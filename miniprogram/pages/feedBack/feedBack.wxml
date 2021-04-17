@@ -1,0 +1,7 @@
+<view class="body">
+  <text style="font-size:30rpx;margin-bottom:30rpx">您好,请根据联系方式进行反馈,谢谢！</text>
+  <view class="QQWX">
+    <text style="margin-bottom:15rpx">QQ:505417246</text>
+    <text>微信:18331092918</text>
+  </view>
+</view>

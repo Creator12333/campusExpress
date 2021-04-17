@@ -1,0 +1,31 @@
+<scroll-view scroll-y class="scrollPage">
+  <view class="UCenter-bg">
+    <button open-type="getUserInfo" bindtap="getUserProfile" wx:if="{{login == false}}">点击授权</button>
+    <image src="{{avatarUrl}}" class="png" style="border-radius:50%;" mode="widthFix" wx:if="{{login == true}}"></image>
+    <view class="text-xl" wx:if="{{login == true}}" style="margin-top:30rpx">{{nickName}}
+    </view>
+    <image src="https://tva3.sinaimg.cn/large/8d406c5egy1gamn31scsdg20f002skhn.gif" mode="scaleToFill" class="gif-wave"></image>
+  </view>
+
+  <view class="cu-list menu card-menu margin-top-xl margin-bottom-xl shadow-lg radius" wx:if="{{login}}">
+    <view class="cu-item arrow">
+      <view class="content" bindtap="jiedan">
+        <image src="../../image/jiedan.png" class="png" mode="aspectFit"></image>
+        <text class="text-grey">我的接单</text>
+      </view>
+    </view>
+    <view class="cu-item arrow" bindtap="fabu">
+      <view class="content" hover-class="none">
+        <image src="../../image/fabu.png" class="png" mode="aspectFit"></image>
+        <text class="text-grey">我的发布</text>
+      </view>
+    </view>
+    <view class="cu-item arrow" bindtap="fankui">
+      <view class="content" hover-class="none">
+        <image src="../../image/kefu.png" class="png" mode="aspectFit"></image>
+        <text class="text-grey">客服反馈</text>
+      </view>
+    </view>
+  </view>
+  <view class="cu-tabbar-height"></view>
+</scroll-view>
